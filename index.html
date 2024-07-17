@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <h2>Todo List</h2>
+        <div class="alert" id="alert"></div>
+        <div class="input-container">
+            <input type="text" id="todo-input" placeholder="Add a todo...">
+            <input type="date" id="todo-date">
+            <button id="add-btn">+</button>
+        </div>
+        <div class="buttons-container">
+            <button id="filter-btn">Filter</button>
+            <div class="dropdown" id="dropdown">
+                <button data-filter="all">All</button>
+                <button data-filter="pending">Pending</button>
+                <button data-filter="complete">Complete</button>
+            </div>
+            <button id="delete-all-btn">Delete</button>
+        </div>        
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="todo-list">
+                <!-- Todo items will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
